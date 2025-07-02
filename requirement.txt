@@ -1,0 +1,10 @@
+ipykernel
+numpy
+pandas
+matplotlib
+seaborn
+openpyxl
+sklearn
+statsmodels
+plotly
+ffmpeg-python
