@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Submission Received</h1>
+    <p>Thank you for your submission!</p>
+    <p>Your name: {{ name }}</p>
+    <p>Your marks: {{ marks }}</p>
+
+    {% if marks > 50  %}
+        <p>Congratulations! You have passed.</p>
+    {% else %}
+        <p>Unfortunately, you have not passed.</p>
+    {% endif %}
+    <a href="/">Go back to home</a>
+    <a href="/submit">Submit another response</a>
+</body>
+</html>
