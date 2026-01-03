@@ -4,7 +4,14 @@ pandas
 matplotlib
 seaborn
 openpyxl
-sklearn
+scikit-learn
 statsmodels
 plotly
 ffmpeg-python
+networkx
+pydot
+nbformat
+flask
+streamlit
+mlxtend
+nltk
