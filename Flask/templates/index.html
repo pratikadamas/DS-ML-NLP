@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Welcome to My Flask App</h1>
+    <p>This is the home page.</p>
+    <p>Use the form below to submit your name:</p>
+
+    <form action="/submit" method="POST" onsubmit="return validateNumber()">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="marks">Enter your marks:</label>
+        <input type="number" id="marks" name="marks" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateNumber() {
+            const num = parseFloat(document.getElementById('marks').value);
+
+            if (isNaN(num) || num < 0 || num > 100) {
+                alert('❌ Please enter a valid number between 0 and 100.');
+                return false;  // prevent form submission
+            }
+
+            confirm('✅ Form is valid!');
+            return true; // allow form submission
+        }
+    </script>
+</body>
+</html>
