@@ -4,7 +4,7 @@ url = "http://localhost:11434/api/generate"
 
 payload = {
     "model": "deepseek-r1:1.5b",
-    "prompt": "Explain logistic regression in simple terms.",
+    "prompt": "What is the capital of France?",
     "stream": False
 }
 
